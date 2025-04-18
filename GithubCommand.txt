@@ -1,0 +1,121 @@
+Microsoft Windows [Version 10.0.26100.3775]
+(c) Microsoft Corporation. All rights reserved.
+
+(base) E:\Practice\End_To_End_DS_Project\mlproject>conda create -p venv python==3.8 -y
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: E:\Practice\End_To_End_DS_Project\mlproject\venv
+
+  added / updated specs:
+    - python==3.8
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2025.2.25  |       haa95532_0         130 KB
+    openssl-1.1.1w             |       h2bbff1b_0         5.5 MB
+    pip-24.2                   |   py38haa95532_0         2.4 MB
+    python-3.8.0               |       hff0d562_2        15.9 MB
+    setuptools-75.1.0          |   py38haa95532_0         1.6 MB
+    sqlite-3.45.3              |       h2bbff1b_0         973 KB
+    vc-14.42                   |       haa95532_5          11 KB
+    vs2015_runtime-14.42.34433 |       hbfb602d_5         1.2 MB
+    wheel-0.44.0               |   py38haa95532_0         137 KB
+    ------------------------------------------------------------
+                                           Total:        27.8 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2025.2.25-haa95532_0
+  openssl            pkgs/main/win-64::openssl-1.1.1w-h2bbff1b_0
+  pip                pkgs/main/win-64::pip-24.2-py38haa95532_0
+  python             pkgs/main/win-64::python-3.8.0-hff0d562_2
+  setuptools         pkgs/main/win-64::setuptools-75.1.0-py38haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.45.3-h2bbff1b_0
+  vc                 pkgs/main/win-64::vc-14.42-haa95532_5
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.42.34433-hbfb602d_5
+  wheel              pkgs/main/win-64::wheel-0.44.0-py38haa95532_0
+
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done                                                                                                                          
+Verifying transaction: done                                                                                                                          
+Executing transaction: done                                                                                                                          
+#                                                                                                                                                    
+# To activate this environment, use                                                                                                                  
+#
+#     $ conda activate E:\Practice\End_To_End_DS_Project\mlproject\venv                                                                              
+#                                                                                                                                                    
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) E:\Practice\End_To_End_DS_Project\mlproject>conda activate venv/
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git init
+Initialized empty Git repository in E:/Practice/End_To_End_DS_Project/mlproject/.git/
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git add README.md
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git commit - "First commit"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'First commit' did not match any file(s) known to git
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git commit -m "First commit"
+[master (root-commit) c60955b] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git status     
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        venv/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git branch -M main
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git remote add origin https://github.com/Soumen-Mandal/mlproject.git
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git remote -v
+origin  https://github.com/Soumen-Mandal/mlproject.git (fetch)
+origin  https://github.com/Soumen-Mandal/mlproject.git (push)
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git config --global user.email
+soumenmandal712@gmail.com
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 248 bytes | 248.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Soumen-Mandal/mlproject.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.41 KiB | 145.00 KiB/s, done.
+From https://github.com/Soumen-Mandal/mlproject
+   c60955b..7477226  main       -> origin/main
+Updating c60955b..7477226
+Fast-forward
+ .gitignore | 174 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 174 insertions(+)
+ create mode 100644 .gitignore
+(E:\Practice\End_To_End_DS_Project\mlproject\venv) E:\Practice\End_To_End_DS_Project\mlproject>pip install -r requirements.txt
